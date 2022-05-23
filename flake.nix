@@ -33,18 +33,5 @@
           ];
         };
       };
-      homeConfig = {
-        ponzi = home-manager.lib.homeManagerConfiguration {
-          inherit system pkgs;
-          username = "ponzi";
-          homeDirectory = "/home/ponzi";
-          stateVersion = "21.11";
-          configuration = {
-            imports = [
-              ./home.nix
-            ];
-          };
-        };
-      };
     };
 }
